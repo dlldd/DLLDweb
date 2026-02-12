@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DLLD design | Graphic Design Studio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable.min.css" />
+    <!-- Adobe Fonts -->
+    <link rel="stylesheet" href="https://use.typekit.net/eyi7xsd.css">
+    <style>
+      :root {
+        /* Adobe Font Family - Assuming itc-avant-garde-gothic-pro or futura-pt from the kit eye7xsd */
+        --headline-font: "itc-avant-garde-gothic-pro", "futura-pt", sans-serif;
+      }
+      body {
+        font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+        background-color: #ffffff;
+        color: #1a1a1a;
+      }
+
+      /* 헤드라인 및 Black 웨이트 자간 조정: 요청에 따라 자간을 넓힘 (0.02em~0.04em) */
+      h1, h2, h3, .adobe-font, .font-black {
+        font-family: var(--headline-font);
+        letter-spacing: 0.03em;
+      }
+      
+      /* 기본적으로 들어있던 tracking-tighter들을 상쇄하거나 보완하기 위한 스타일 */
+      .tracking-tighter {
+        letter-spacing: -0.01em !important; /* 원래 -0.05em에서 대폭 완화 */
+      }
+      .tracking-tight {
+        letter-spacing: 0em !important; /* 원래 -0.025em에서 완화 */
+      }
+
+      .serif {
+        font-family: "Pretendard Variable", Pretendard, sans-serif;
+      }
+      ::-webkit-scrollbar {
+        width: 6px;
+      }
+      ::-webkit-scrollbar-track {
+        background: #f1f1f1;
+      }
+      ::-webkit-scrollbar-thumb {
+        background: #d1d1d1;
+      }
+      ::-webkit-scrollbar-thumb:hover {
+        background: #a1a1a1;
+      }
+      html {
+        scroll-behavior: smooth;
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react/": "https://esm.sh/react@^19.2.4/",
+    "react": "https://esm.sh/react@^19.2.4",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.4/"
+  }
+}
+</script>
+</head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>
