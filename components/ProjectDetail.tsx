@@ -26,7 +26,7 @@ const ProjectDetail: React.FC<ProjectDetailProps> = ({ project, onBack }) => {
             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" className="transition-transform group-hover:-translate-x-1">
               <path d="M19 12H5M12 19l-7-7 7-7"/>
             </svg>
-            Back to Gallery
+            MORE WORKS
           </button>
         </div>
 
@@ -81,17 +81,17 @@ const ProjectDetail: React.FC<ProjectDetailProps> = ({ project, onBack }) => {
           </div>
         )}
 
-        {/* 하단 네비게이션 */}
-        <div className="mt-32 pt-16 border-t border-gray-100 flex justify-center">
+        {/* 하단 네비게이션: 여백 축소 및 버튼 형태 타원형으로 변경 */}
+        <div className="mt-12 pt-8 flex justify-center">
           <button 
             onClick={onBack}
-            className="group flex items-center gap-3 text-sm font-black uppercase tracking-widest bg-black text-white px-10 py-5 rounded-none hover:bg-[#EE3231] transition-all duration-300 active:scale-95 shadow-none"
+            className="group flex items-center gap-3 text-sm font-black uppercase tracking-widest bg-[#EE3231] text-white px-10 py-5 rounded-full hover:bg-black transition-all duration-300 active:scale-95 shadow-none"
             style={{ boxShadow: 'none' }}
           >
             <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" className="transition-transform group-hover:-translate-x-1">
               <path d="M19 12H5M12 19l-7-7 7-7"/>
             </svg>
-            Explore More Work
+            MORE WORKS
           </button>
         </div>
       </div>
